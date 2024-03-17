@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Математичні обчислення</title>
+    <link
+      rel="stylesheet"
+      href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Математичні функції</h1>
+      <form id="mathForm">
+        <!-- Завдання 1 -->
+        <input
+          type="text"
+          id="arrayInput"
+          placeholder="Введіть масив, напр. 1,2,'a',3"
+          required />
+        <button
+          type="button"
+          onclick="calculateAverage()">
+          Обчислити середнє чисел
+        </button>
+        <div id="averageResult"></div>
+
+        <!-- Завдання 2 -->
+        <input
+          type="text"
+          id="mathX"
+          placeholder="Введіть число X"
+          required />
+        <input
+          type="text"
+          id="mathZnak"
+          placeholder="Введіть знак операції"
+          required />
+        <input
+          type="text"
+          id="mathY"
+          placeholder="Введіть число Y"
+          required />
+        <button
+          type="button"
+          onclick="performOperation()">
+          Виконати операцію
+        </button>
+        <div id="operationResult"></div>
+
+        <!-- Завдання 3 -->
+        <input
+          type="number"
+          id="arrayLength"
+          placeholder="Довжина основного масиву"
+          required />
+        <input
+          type="number"
+          id="subArrayLength"
+          placeholder="Довжина внутрішніх масивів"
+          required />
+        <input
+          type="text"
+          id="arrayValues"
+          placeholder="Значення елементів, напр. 1,2,3"
+          required />
+        <button
+          type="button"
+          onclick="fillArray()">
+          Заповнити масив
+        </button>
+        <div id="arrayResult"></div>
+
+        <!-- Завдання 4 -->
+        <input
+          type="text"
+          id="stringInput"
+          placeholder="Введіть рядок, напр. hello world"
+          required />
+        <input
+          type="text"
+          id="charsToRemove"
+          placeholder="Символи для видалення, напр. ld"
+          required />
+        <button
+          type="button"
+          onclick="removeCharacters()">
+          Видалити символи
+        </button>
+        <div id="stringResult"></div>
+      </form>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
